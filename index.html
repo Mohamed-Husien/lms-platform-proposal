@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خطة العمل والمقترح الفني لتنفيذ المنظومة | منصة تعليمية متكاملة وحماية المحتوى (LMS Platform)</title>
+  
+  <!-- Fonts: Cairo & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Cairo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .font-latin {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* BiDi Isolation for Phone Numbers and LTR Code */
+    .bidi-isolate, bdi, [dir="ltr"] {
+      direction: ltr !important;
+      unicode-bidi: isolate !important;
+      display: inline-block !important;
+      text-align: left !important;
+    }
+
+    /* Uncopyable and Protected Content */
+    *, html, body {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      user-select: none !important;
+    }
+
+    /* Clean Word Paper Container */
+    .word-sheet {
+      background: #ffffff;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Print settings for exact Word/PDF export */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .word-sheet {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="py-6 sm:py-12 px-3 sm:px-6 select-none" oncontextmenu="return false;" oncopy="return false;" oncut="return false;" ondragstart="return false;">
+
+  <!-- Global Fixed Watermark (Always visibly centered across all pages while scrolling) -->
+  <div class="fixed inset-0 flex items-center justify-center pointer-events-none select-none z-10 overflow-hidden">
+    <img src="assets/watermark.png" alt="LogicCraft Watermark" class="w-[280px] sm:w-[440px] object-contain opacity-[0.035] mix-blend-multiply">
+  </div>
+
+  <!-- Floating Action Bar (Top Left) -->
+  <div class="fixed top-4 left-4 z-50 flex items-center gap-2 no-print">
+    <a href="https://wa.me/201275566392?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%85.%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A7%D8%B7%D9%84%D8%B9%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%AE%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%AA%D8%B1%D8%AD%20%D8%A7%D9%84%D9%81%D9%86%D9%8A%20%D9%84%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D9%80%20LMS%20%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%AA%D9%88%D9%89%D8%8C%20%D9%88%D8%AD%D8%A7%D8%A8%D8%A8%20%D9%86%D8%AF%D8%B1%D8%AF%D8%B4%20%D9%81%D9%8A%20%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0." 
+       target="_blank"
+       class="inline-flex items-center gap-2 bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>تواصل مع م. محمد على واتساب</span>
+    </a>
+  </div>
+
+  <!-- Document Paper Container (Word Paper Sheet Style) -->
+  <main class="word-sheet relative overflow-hidden max-w-4xl mx-auto p-4 sm:p-8 md:p-12 rounded-2xl space-y-10">
+
+    <!-- Document Header / Letterhead -->
+    <header class="relative z-10 border-b-2 border-slate-900 pb-6 space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="p-1 bg-[#161922] rounded-2xl shadow-md border border-slate-700 shrink-0">
+            <img src="assets/logo.jpg" alt="LogicCraft Logo" class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl object-contain">
+          </div>
+          <div>
+            <div class="text-xs uppercase font-extrabold tracking-wider text-blue-600 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-blue-600 inline-block"></span>
+              خطة العمل والمقترح الفني لتنفيذ المنظومة
+            </div>
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 mt-1">
+              منصة إدارة التعلم وحماية المحتوى (LMS & DRM Platform)
+            </h1>
+            <div class="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5 font-latin">
+              Comprehensive Secured LMS, Video Chunking & Center Management System
+            </div>
+            <div class="text-xs text-slate-500 mt-1">
+              تطبيق موبايل للطلاب (iOS و Android عبر Flutter) + لوحة تحكم ويب للمدرس والسنتر + سيرفر سحابي وبث مشفر
+            </div>
+          </div>
+        </div>
+        <div class="text-right text-xs text-slate-600 space-y-1.5 shrink-0 bg-slate-50 sm:bg-transparent p-3 sm:p-0 rounded-xl border sm:border-0 border-slate-200">
+          <div><span class="text-slate-500 font-medium">رقم المرجع:</span> <span class="font-latin text-slate-900 font-bold" dir="ltr">LMS-PRP-2026</span></div>
+          <div><span class="text-slate-500 font-medium">التاريخ:</span> <span class="text-slate-900 font-semibold">24 نوفمبر 2026</span></div>
+          <div><span class="text-slate-500 font-medium">الحالة:</span> <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">جاهز للمناقشة والبدء</span></div>
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
+        <div><strong>إعداد المهندس:</strong> م. محمد حسين — <span class="font-latin font-bold text-slate-900">LogicCraft</span> (استشاري تطوير التطبيقات والحلول السحابية)</div>
+        <div><strong>واتساب مباشر:</strong> <bdi dir="ltr" class="bidi-isolate font-latin text-slate-900 font-bold inline-block">+20 127 556 6392</bdi></div>
+      </div>
+    </header>
+
+    <!-- Section 1: Direct Introduction -->
+    <section class="relative z-10 space-y-4">
+      <div class="flex items-center gap-2 text-slate-900 font-bold text-lg border-r-4 border-blue-600 pr-3">
+        <span>1. رسالة سريعة من م. محمد (إحنا فهمنا فكرتك إزاي)</span>
+      </div>
+      
+      <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <p>
+          بص يا هندسة، السلام عليكم. بعد ما قرأت البريف بتاعك بتفاصيله كاملة، حابب أقولك إن الفكرة ممتازة جداً ومطلوبة فعلاً في السوق؛ لأنك هنا مش بتعمل مجرد منصة كورسات عادية ترفع عليها فيديوهات زي مواقع الووردبريس أو المنصات التجارية، إنت هنا بتعمل <strong>نظام أمني وإداري متكامل لسنتر تعليمي ومدرسين خصوصيين (Secured LMS & Anti-Piracy Platform)</strong>.
+        </p>
+        <p>
+          أكبر كابوس بيواجه أي مدرس أو سنتر في مصر والخليج هو <strong>تسريب الفيديوهات ومشاركة الأكونت الواحد بين عشرات الطلاب</strong>؛ عشان كده البريف بتاعك كان دقيق جداً في تحديد النقط الحساسة: تشفير الفيديو وتقطيعه لـ (HLS Chunks)، قفل تصوير الشاشة والسكرين شوت، ربط الحساب ببصمة جهاز واحدة (Device Binding)، كويزات بمواعيد صارمة وحجب النتائج، ومتابعة مصاريف الطلاب وإشعارات أولياء الأمور عبر الواتساب.
+        </p>
+        <p>
+          ولأننا نفذنا بالفعل أنظمة تعليمية سابقة شغالة حالياً في السوق المصري والسعودي (زي ما هنوضح لك في سوابق الأعمال الحية)، كتبنا لك المقترح ده بأسلوب عملي ومباشر يوضح لك خطة التنفيذ بالملي، والتولز اللي هتحتاجها، والتكلفة الحقيقية بدون أي لف أو دوران.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 2: Proof of Work & Live Case Studies -->
+    <section class="relative z-10 space-y-4">
+      <div class="flex items-center justify-between gap-2 border-r-4 border-blue-600 pr-3">
+        <h2 class="text-slate-900 font-black text-lg sm:text-xl">
+          2. سوابق أعمال وأنظمة حية نفذناها بالفعل في نفس المجال
+        </h2>
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800 border border-blue-200">
+          تطبيقات لايف في الستورز ⭐
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-600">
+        عشان تكون مطمئن بنسبة 100% إن فريق العمل فاهم كل سطر كود وعنده حلول جاهزة ومجربة لأصعب التحديات، دي نماذج لمشاريع نفذناها بالفعل وتعمل حالياً على المتاجر الرسمية:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Case Study 1: Remotly (Chunking & LMS) -->
+        <div class="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                تقطيع وبث الفيديوهات والكويزات
+              </span>
+              <span class="text-xs font-bold text-slate-500 font-latin">Google Play & App Store</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">
+              تطبيق Remotly (منصة تعليمية متكاملة)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              تطبيق تعليمي ضخم مطبق فيه معمارية <strong>تقطيع الفيديو (HLS Chunking & Streaming)</strong>، تشغيل المحاضرات الطويلة بسلاسة تامة، البث المشفر عالي الأمان، ونظام الكويزات التفاعلية وحماية المحتوى — وهو نفس النواة التقنية المطلوبة في منصتكم.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 space-y-2">
+            <a href="https://play.google.com/store/apps/details?id=com.moltaqa.remotly&hl=en" 
+               target="_blank" 
+               class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition">
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              <span>معاينة التطبيق على متجر Google Play</span>
+            </a>
+            <div class="text-[11px] text-slate-500 text-center">
+              (متوفر ومنشور رسمياً على Google Play و App Store)
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2: Alam Belqalam (School & Center Management) -->
+        <div class="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                إدارة المنشآت والسناتر والمتابعة
+              </span>
+              <span class="text-xs font-bold text-slate-500 font-latin">Saudi Arabia Live System</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900">
+              منظومة "علم بالقلم" (إدارة المدارس والمنشآت)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              منظومة متكاملة مطبقة في المملكة العربية السعودية لإدارة المنشآت التعليمية بكامل أدوارها (الإدارة العامة، مديري الأقسام، المدرسين، وأولياء الأمور)، ومتابعة الحضور والغياب، وإشعارات التقارير وسجلات الطلاب.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-100 space-y-2">
+            <div class="grid grid-cols-2 gap-2">
+              <a href="https://play.google.com/store/apps/details?id=com.ex.alam_belqalam_app&pcampaignid=web_share" 
+                 target="_blank" 
+                 class="inline-flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition">
+                <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                <span>متجر Google Play</span>
+              </a>
+              <a href="https://www.facebook.com/share/r/15242TCLfuf/" 
+                 target="_blank" 
+                 class="inline-flex items-center justify-center gap-1 py-2 px-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition">
+                <i data-lucide="video" class="w-3.5 h-3.5"></i>
+                <span>فيديو المنظومة</span>
+              </a>
+            </div>
+            <div class="text-[11px] text-slate-500 text-center">
+              (متوفر رسمياً على Google Play و App Store)
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="p-3.5 bg-blue-50/60 border border-blue-200/80 rounded-xl text-xs text-blue-900">
+        💡 <strong>خلاصة الربط:</strong> المنظومة التي ترغبون في بنائها تجمع بدقة بين <strong>القوة الإدارية ومتابعة الطلاب وأولياء الأمور</strong> الموجودة في "علم بالقلم"، وبين <strong>القوة البرمجية لبث المحتوى المشفر وتقطيع الفيديوهات والكويزات</strong> المطبقة في "Remotly".
+      </div>
+    </section>
+
+    <!-- Section 3: The 5 Key Technical Highlights -->
+    <section class="relative z-10 space-y-4">
+      <div class="flex items-center justify-between gap-2 border-r-4 border-blue-600 pr-3">
+        <h2 class="text-slate-900 font-black text-lg sm:text-xl">
+          3. أهم 5 نقط فنية في البريف وإزاي هننفذهم بالظبط
+        </h2>
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 border border-slate-200">
+          المطلوب / طريقة التنفيذ
+        </span>
+      </div>
+
+      <div class="space-y-3">
+        
+        <!-- Point 1: Video Piracy & DRM -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+            <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-extrabold font-latin">1</span>
+            <span>حماية الفيديوهات من التحميل، برامج السحب، ومنع التسجيل (Anti-Piracy & DRM)</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1">المطلوب:</strong>
+              منع برامج التحميل التلقائي مثل IDM تماماً، تشفير الفيديو ليعمل فقط داخل مشغل المنصة، ومنع لقطات الشاشة أو تصوير الشاشة فيديو.
+            </div>
+            <div class="p-3 bg-blue-50/40 rounded-lg border border-blue-100">
+              <strong class="text-blue-900 block mb-1">طريقة التنفيذ:</strong>
+              تقطيع الفيديو لـ HLS Chunks مشفرة بتوكنات ديناميكية مؤقتة، وتفعيل حماية الشاشة في Flutter عبر <code class="font-latin text-blue-700 bg-blue-100/60 px-1 py-0.5 rounded">FLAG_SECURE</code> في أندرويد و <code class="font-latin text-blue-700 bg-blue-100/60 px-1 py-0.5 rounded">UIScreen.capturedDidChangeNotification</code> في آيفون، بالإضافة إلى علامة مائية عائمة متحركة تحمل رقم تليفون الطالب وكوده طوال تشغيل الفيديو.
+            </div>
+          </div>
+        </div>
+
+        <!-- Point 2: Device Binding -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+            <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-extrabold font-latin">2</span>
+            <span>بصمة الجهاز وقفل الحساب على جهاز واحد (Device Binding)</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1">المطلوب:</strong>
+              الطالب يسجل الدخول من جهازه الخاص، ويرتبط حسابه بهذا الجهاز فقط؛ لو حاول فتح الحساب من جهاز آخر يرفض النظام الدخول حتى لو معاه الباسورد.
+            </div>
+            <div class="p-3 bg-blue-50/40 rounded-lg border border-blue-100">
+              <strong class="text-blue-900 block mb-1">طريقة التنفيذ:</strong>
+              توليد بصمة عتادية مشفرة ومحمية في KeyStore (أندرويد) و Keychain (آيفون)، وتوثيق البصمة على السيرفر في أول تسجيل دخول. أي محاولة للدخول من جهاز آخر يتم رفضها تلقائياً مع زر طلب فك الربط بموافقة المدرس.
+            </div>
+          </div>
+        </div>
+
+        <!-- Point 3: 3-4 Hours Streaming Without Lag -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+            <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-extrabold font-latin">3</span>
+            <span>استضافة وبث حصص طويلة (3-4 ساعات) بدون لاج وبجودات متعددة</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1">المطلوب:</strong>
+              رفع فيديوهات ذات حجم كبير وساعات تشغيل طويلة، وتوفير جودات متعددة من 240p حتى 1080p تناسب سرعة إنترنت الطلاب في مصر.
+            </div>
+            <div class="p-3 bg-blue-50/40 rounded-lg border border-blue-100">
+              <strong class="text-blue-900 block mb-1">طريقة التنفيذ:</strong>
+              الاعتماد على شبكة بث متخصصة (Bunny.net Stream) تتولى معالجة الفيديو تلقائياً فور رفعه وتحويله لجودات متعددة وتوزيعه عبر شبكة CDN عالمية؛ مما يضمن تشغيل الفيديو بدون أي حمل على سيرفر النظام الأصلي وبدون تقطيع.
+            </div>
+          </div>
+        </div>
+
+        <!-- Point 4: Student Analytics -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+            <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-extrabold font-latin">4</span>
+            <span>تتبع مشاهدة الطالب وتحليل السرعة (Student Analytics)</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1">المطلوب:</strong>
+              معرفة هل شاهد الطالب الحصة بالكامل أم تخطاها، وهل قام بتسريع الفيديو (مثلاً 2x) لمعرفة مدى التزامه الفعلي.
+            </div>
+            <div class="p-3 bg-blue-50/40 rounded-lg border border-blue-100">
+              <strong class="text-blue-900 block mb-1">طريقة التنفيذ:</strong>
+              إرسال نبضات دورية (Heartbeat) من المشغل للسيرفر كل 10 ثوانٍ تتضمن الثانية المشاهدة وسرعة التشغيل اللحظية، وتخزينها في سجل مشاهدة دقيق يظهر في لوحة تحكم المدرس كنسبة مئوية بيانية مؤكدة.
+            </div>
+          </div>
+        </div>
+
+        <!-- Point 5: Quizzes, Hidden Results & WhatsApp -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+            <span class="w-6 h-6 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-extrabold font-latin">5</span>
+            <span>الكويزات وحجب الإجابات وأتمتة رسائل الواتساب لأولياء الأمور</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1">المطلوب:</strong>
+              كويزات مؤقتة بوقت إجمالي، حجب الدرجات والحلول حتى موعد يحدده المدرس، وإرسال الدرجات وإشعارات سداد المصاريف لولي الأمر على الواتساب.
+            </div>
+            <div class="p-3 bg-blue-50/40 rounded-lg border border-blue-100">
+              <strong class="text-blue-900 block mb-1">طريقة التنفيذ:</strong>
+              حساب وقت الكويز من السيرفر لمنع التلاعب بتوقيت الموبايل، وحجب بيانات النتائج بالكامل من الـ API حتى حلول الموعد، مع ربط بوابة إرسال واتساب سحابية توفر زري تحكم يدوي للمدرس لتفعيل أو إلغاء الإرسال لكل كويز.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Tools & Running Costs Transparency -->
+    <section class="relative z-10 space-y-4">
+      <div class="flex items-center justify-between gap-2 border-r-4 border-blue-600 pr-3">
+        <h2 class="text-slate-900 font-black text-lg sm:text-xl">
+          4. التولز والسيرفرات اللي هنحتاجها ومصاريفها الصريحة
+        </h2>
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 border border-slate-200">
+          شفافية كاملة بدون مفاجآت ⭐
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        أهم ميزة بنقدمها هي المصارحة الكاملة بتكاليف التشغيل الشهرية والخدمات الخارجية عشان تكون عامل حسابك من اليوم الأول:
+      </p>
+
+      <div class="overflow-x-auto border border-slate-200 rounded-xl">
+        <table class="w-full text-right text-xs">
+          <thead class="bg-slate-100 text-slate-900 font-bold border-b border-slate-200">
+            <tr>
+              <th class="p-3">الخدمة والوظيفة</th>
+              <th class="p-3">الأداة المقترحة</th>
+              <th class="p-3">التكلفة والاشتراك التقديري</th>
+              <th class="p-3">ليه اخترنا دي بالذات؟ (الميزة الصريحة)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">استضافة الفيديوهات والبث (Streaming)</td>
+              <td class="p-3 font-bold text-blue-700 font-latin">Bunny.net Stream</td>
+              <td class="p-3 font-latin">~0.005$ لكل جيجابايت استهلاك</td>
+              <td class="p-3 text-[11px]">أوفر وأسرع شبكة بث في مصر، تتولى التشفير والتقطيع لـ HLS تلقائياً بدون ما تستهلك رامات السيرفر.</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">سيرفر النظام وقاعدة البيانات</td>
+              <td class="p-3 font-bold text-slate-800 font-latin">Hetzner Cloud VPS</td>
+              <td class="p-3 font-latin">~15$ إلى 25$ شهرياً</td>
+              <td class="p-3 text-[11px]">سيرفر ألماني بمواصفات عالية (16GB RAM) يتحمل آلاف الطلاب المتزامنين في وقت واحد دون انهيار.</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">تخزين الملازم وملفات الـ PDF</td>
+              <td class="p-3 font-bold text-emerald-700 font-latin">Cloudflare R2</td>
+              <td class="p-3 text-emerald-700 font-bold">مجاني 100% (حتى 10GB)</td>
+              <td class="p-3 text-[11px]">مساحة تخزين آمنة بدون أي مصاريف إضافية على تحميل ملفات الشرح والملازم.</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-semibold text-slate-900">بوابة إرسال رسائل الواتساب</td>
+              <td class="p-3 font-bold text-slate-800 font-latin">WhatsApp Gateway / UltraMsg</td>
+              <td class="p-3 font-latin">~15$ شهرياً (رسائل غير محدودة)</td>
+              <td class="p-3 text-[11px]">اشتراك شهري ثابت يسمح بإرسال آلاف الرسائل لأولياء الأمور دون دفع تكلفة على كل رسالة.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 5: The Honest Bulk Estimation & Timeline -->
+    <section class="relative z-10 space-y-5">
+      <div class="flex items-center justify-between gap-2 border-r-4 border-blue-600 pr-3">
+        <h2 class="text-slate-900 font-black text-lg sm:text-xl">
+          5. تقدير التكلفة والمدة الزمنية (The Honest Bulk Estimation)
+        </h2>
+        <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-blue-100 text-blue-900 border border-blue-200 shrink-0 whitespace-nowrap">
+          تقدير واقعي ومباشر ⭐
+        </span>
+      </div>
+
+      <!-- Conversational intro card -->
+      <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <p>
+          بص يا هندسة، أنا كان ممكن أرمي لك أي رقم إجمالي وخلاص وأقولك المشروع ده يكلف كذا، وأنا صراحة مش فارق معايا إنت هتشتغل معايا أو هتكمل مع حد تاني، بس ده اللي يمليه الضمير التقني والحد الأدنى للتنفيذ الصح عشان تكون شايف الصورة كاملة بكل الـ features وبكل الـ tools اللي هتحتاجها، وعشان السيستم ميبوظش منك بعد أسبوعين من إطلاقه في السنتر.
+        </p>
+        <p>
+          مشروع بالحجم ده (فيه تطبيق موبايل أصيل للطلاب بنظام تشفير الفيديوهات، حجب لقطات وتسجيل الشاشة، بصمة الجهاز العتادية، لوحة تحكم ويب متقدمة للمدرس والسنتر، إدارة المصاريف وقفل الحسابات التلقائي، وربط الواتساب السحابي) — ده شغل محتاج تيم مكرس من 4 مهندسين متخصصين:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 font-semibold text-xs text-slate-800">
+          <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><span>Senior Backend Developer (الـ APIs المركزية والأمان وتشفير الفيديوهات)</span></div>
+          <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><span>Mid Backend Developer (الكويزات والمصاريف وإرسال الواتساب وقفل الحسابات)</span></div>
+          <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><span>Senior Flutter Developer (مشغل الفيديو المشفر، بصمة الجهاز، ومنع التسجيل)</span></div>
+          <div class="flex items-center gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i><span>Mid Flutter Developer + Web (شاشات الطلاب ولوحات التحكم الإدارية)</span></div>
+        </div>
+      </div>
+
+      <!-- Pricing & Turnkey Box -->
+      <div class="p-6 bg-gradient-to-br from-blue-50/70 via-white to-slate-50 border-2 border-blue-500/30 rounded-2xl shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-blue-200/60 pb-4">
+          <div>
+            <div class="text-xs font-bold text-blue-700 uppercase tracking-wider">التقدير المالي الإجمالي الشامل للمشروع</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 mt-1 font-latin">
+              $2,800 — $3,000 <span class="text-sm font-bold text-slate-500 font-sans">دولار (أو ما يعادله)</span>
+            </div>
+          </div>
+          <div class="text-right sm:text-left">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-200">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+              تسليم مفتاح شامل حسابات المتاجر
+            </span>
+          </div>
+        </div>
+
+        <div class="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <p>
+            📌 <strong>تفاصيل قفل العرض عند 3,000$ (باقة التسليم المتكامل):</strong>
+          </p>
+          <ul class="space-y-1.5 pr-4 list-disc text-slate-600 text-xs">
+            <li><strong>التنفيذ البرمجي الكامل:</strong> لكافة أجزاء المنظومة (الموبايل، السيرفرات، لوحات التحكم، وبث الفيديو).</li>
+            <li><strong>تحمل وتغطية حساب Apple Developer:</strong> الرسوم الرسمية السنوية لشركة أبل بقيمة <span class="font-latin font-bold text-slate-900">$99</span>.</li>
+            <li><strong>تحمل وتغطية حساب Google Play Console:</strong> الرسوم الرسمية لشركة جوجل بقيمة <span class="font-latin font-bold text-slate-900">$25</span> (تدفع لمرة واحدة).</li>
+            <li><strong>إدارة ملفات النشر والمراجعة:</strong> إعداد الـ Screenshots، سياسات الخصوصية، ومتابعة القبول الرسمي على App Store و Google Play حتى ظهور التطبيق لايف للمستخدمين.</li>
+          </ul>
+        </div>
+
+        <!-- Duration Box -->
+        <div class="p-4 bg-white border border-slate-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-500">الجدول الزمني المعتمد للتنفيذ</div>
+              <div class="text-sm sm:text-base font-extrabold text-slate-900">
+                من 80 إلى 90 يوم عمل
+              </div>
+            </div>
+          </div>
+          <div class="text-xs text-slate-500 leading-relaxed max-w-sm">
+            المدة دي تشمل الاختبار الأمني المكثف على مختلف أجهزة أندرويد وآيفون، واختبارات ضغط الكويزات، وفترة مراجعة أبل (App Store Review).
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section 6: Handover & Ownership -->
+    <section class="relative z-10 space-y-4">
+      <div class="flex items-center gap-2 text-slate-900 font-bold text-lg border-r-4 border-blue-600 pr-3">
+        <span>6. الضمان وحقوق الملكية وتسليم الشغل</span>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-1">
+          <div class="text-blue-600 font-bold flex items-center gap-1.5">
+            <i data-lucide="code-2" class="w-4 h-4"></i>
+            <span>ملكية السورس كود 100%</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            تسليم السورس كود كاملاً (Flutter + Backend + Web) مع التوثيق ودليل التشغيل بدون أي تشفير أو احتكار.
+          </p>
+        </div>
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-1">
+          <div class="text-emerald-600 font-bold flex items-center gap-1.5">
+            <i data-lucide="shield" class="w-4 h-4"></i>
+            <span>ضمان ودعم فني مجاني</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            فترة ضمان ودعم فني بعد الإطلاق لمعالجة أي ملاحظات برمجية أو أخطاء غير متوقعة لضمان استقرار العمل.
+          </p>
+        </div>
+        <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm space-y-1">
+          <div class="text-amber-600 font-bold flex items-center gap-1.5">
+            <i data-lucide="cloud" class="w-4 h-4"></i>
+            <span>حسابات سحابية باسم العميل</span>
+          </div>
+          <p class="text-slate-600 leading-relaxed">
+            فتح ونقل كامل الحسابات السحابية (Bunny Stream, Hetzner, Cloudflare) باسم المدرس أو السنتر رسمياً وبتحكم كامل.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Direct Action Block -->
+    <footer class="relative z-10 border-t-2 border-slate-900 pt-6 space-y-4 text-center">
+      <div class="max-w-xl mx-auto space-y-3">
+        <h3 class="text-lg font-black text-slate-900">
+          جاهزون للانطلاق فوراً وتحويل الفكرة إلى واقع
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          زي ما وضحت لك يا هندسة، أنا مش فارق معايا إنت هتشتغل معايا أو هتكمل مع حد تاني، بس ده اللي يمليه الضمير التقني وده الحد الأدنى للتنفيذ الصح عشان تكون الصورة كاملة بكل الـ features والـ tools قدامك. شوف وقارن براحتك، ولو قررت نبدأ سوا كلمني في أي وقت ونتوكل على الله.
+        </p>
+
+        <div class="pt-2">
+          <a href="https://wa.me/201275566392?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D9%85.%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A7%D8%B7%D9%84%D8%B9%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%AE%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%AA%D8%B1%D8%AD%20%D8%A7%D9%84%D9%81%D9%86%D9%8A%20%D9%84%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9%20%D8%A7%D9%84%D9%80%20LMS%D8%8C%20%D9%88%D8%AD%D8%A7%D8%A8%D8%A8%20%D9%86%D8%A8%D8%AF%D8%A3%20%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84%20(3000%24)." 
+             target="_blank"
+             class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-[#2563eb] hover:bg-[#1d4ed8] text-white text-sm font-bold px-8 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>تأكيد البدء والتواصل المباشر عبر WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="text-xs text-slate-500 pt-2 flex flex-wrap items-center justify-center gap-3">
+          <span>واتساب: <bdi dir="ltr" class="bidi-isolate font-latin font-bold text-slate-800">+20 127 556 6392</bdi></span>
+          <span>•</span>
+          <span>البريد: <span class="font-latin text-slate-800">mohamedelsayedhussien@gmail.com</span></span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Disable Right-Click Context Menu
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable Keyboard Shortcuts for Inspect, Save, View Source, and Print
+    document.addEventListener('keydown', function(e) {
+      if (
+        (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'a' || e.key === 'p')) ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+        e.key === 'F12'
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
